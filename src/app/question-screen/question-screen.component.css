@@ -1,0 +1,87 @@
+.mainContent {
+    background: url(/assets/134196.webp);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    color: white;
+}
+
+.mainContent::-webkit-scrollbar {
+    display: none;
+}
+
+.mainContent .title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1rem;
+    animation: doSlickAnimation 0.6s linear forwards;
+}
+
+@keyframes doSlickAnimation {
+    0% {
+        transform: scale(0.5);
+        padding-top: 2rem;
+    }
+
+    100% {
+        transform: scale(1ś);
+        padding-top: 1rem;
+    }
+
+}
+
+.questionOption {
+    background: fixed;
+}
+
+.questionList {
+
+}
+
+.questionCard {
+
+
+    width: 40vw;
+    margin-top: 2rem;
+    height: 50vh;
+
+    padding: 3rem;
+    background-color: rgba(17, 25, 40, 0.55);
+    border-radius: 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+    animation: cardAnimation 0.4s linear forwards;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+
+@keyframes cardAnimation {
+    0% {
+        transform: scale(0.9);
+        padding-top: 2rem;
+    }
+
+    100% {
+        transform: scale(1ś);
+        padding-top: 1rem;
+    }
+
+}
+
+.questionOption {
+    height: 24%;
+    width: 100%;
+    margin-top: 0.7rem;
+    border-radius: 1rem;
+    
+    background: #FF7E15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
