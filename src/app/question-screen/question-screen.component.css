@@ -19,12 +19,12 @@
     justify-content: center;
     color: white;
     padding-top: 1rem;
-    animation: doSlickAnimation 0.6s linear forwards;
+    /* animation: doSlickAnimation 0.6s linear forwards; */
 }
 
 @keyframes doSlickAnimation {
     0% {
-        transform: scale(0.5);
+        transform: scale(0.9);
         padding-top: 2rem;
     }
 

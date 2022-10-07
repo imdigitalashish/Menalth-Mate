@@ -1,0 +1,100 @@
+.mainScreen {
+    background-image: url(/assets/images/background.png);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mainScreen>h1 {
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 52px;
+
+    animation: animateUpperText 0.7s linear 0s 1 forwards;
+
+}
+
+.self {
+    color: #FFB000;
+    opacity: 80%;
+
+}
+
+.calmYourself {
+
+    font-size: 3rem;
+    color: white;
+
+}
+
+
+.goBtn {
+    border: 2px solid #FFB000;
+    border-radius: 19px;
+    width: fit-content;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.goBtn:hover {
+    transform: scale(1.08);
+}
+
+.watchButton {
+    background: #FFB000;
+    border-radius: 19px;
+    width: fit-content;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    color: black;
+    transition: all 0.3s;
+
+}
+
+.watchButton:hover {
+    transform: scale(1.08);
+}
+
+.btnHolders {
+    cursor: pointer;
+}
+
+
+.content {
+
+    animation: animateContent 0.7s linear 0s 1 forwards;
+}
+
+.content >img {
+    height: 50vh;
+    margin-left: 3rem;
+}
+
+@keyframes animateUpperText {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateContent {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
