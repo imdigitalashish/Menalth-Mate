@@ -59,7 +59,9 @@ export class QuestionScreenComponent implements OnInit, AfterViewInit {
 
       this.camera.start();
 
-      faceMesh.onResults((res: any) => { console.log(res) });
+      faceMesh.onResults((res: any) => {
+        this.handleResults(res)
+      });
     } catch (err) {
 
     }
