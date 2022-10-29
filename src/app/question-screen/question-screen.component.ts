@@ -1,3 +1,5 @@
+
+
 import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
 import { ApplicationService } from '../application.service';
 
@@ -5,6 +7,7 @@ import { ApplicationService } from '../application.service';
 
 declare var Camera: any;
 declare var FaceMesh: any;
+declare var drawConnectors: any;
 @Component({
   selector: 'app-question-screen',
   templateUrl: './question-screen.component.html',
@@ -68,8 +71,36 @@ export class QuestionScreenComponent implements OnInit, AfterViewInit {
   }
 
 
-  handleResults = (res: any) => {
-    console.log(res);
+  handleResults = (results: any) => {
+    this.contextElem.save();
+    this.contextElem.clearRect(0, 0, this.canvasElement.width, this.canvasElement.height);
+    this.contextElem.drawImage(
+      results.image, 0, 0, this.canvasElement.width, this.canvasElement.height);
+    if (results.multiFaceLandmarks) {
+      for (const landmarks of results.multiFaceLandmarks) {
+        // @ts-ignore
+        drawConnectors(this.contextElem, landmarks, FACEMESH_TESSELATION,
+          { color: '#C0C0C070', lineWidth: 1 });
+        /** 
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_RIGHT_EYE, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_RIGHT_EYEBROW, { color: '#FF3030' });
+      // @ts-ignore 
+      drawConnectors(this.contextElem, landmarks, FACEMESH_RIGHT_IRIS, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_LEFT_EYE, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_LEFT_EYEBROW, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_LEFT_IRIS, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_FACE_OVAL, { color: '#FF3030' });
+      // @ts-ignore
+      drawConnectors(this.contextElem, landmarks, FACEMESH_LIPS, { color: '#FF3030' });*/
+      }
+    }
+    this.contextElem.restore();
   }
 
   handleCameraFeed = (res: any) => {
