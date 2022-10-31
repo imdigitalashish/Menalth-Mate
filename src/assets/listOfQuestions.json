@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Do you like to share your feelings to your loved ones?",
+        "a": "Yes everyday",
+        "b": "Sometimes",
+        "c": "Very rare"
+    },
+    {
+        "question": "Are you giving 'me time' to yourself?",
+        "a": "Everyday",
+        "b": "Trying to give, but time don't permits",
+        "c": "No"
+    },
+    {
+        "question": "Recently do you get irritated easily ?",
+        "a": "Very rare",
+        "b": "Sometimes",
+        "c": "Yes everyday"
+    },
+    {
+        "question": "How are you feeling most of the time ?",
+        "a": "I am happy most of the time",
+        "b": "I am sad sometimes",
+        "c": "I always feel sad and can't concentrate on my life"
+    },
+    {
+        "question": "Do you feel discouraged about your future ?",
+        "a": "I am not particularly discouraged about my future",
+        "b": "I feel discouraged about my future sometimes",
+        "c": "I feel like my future is hopeless and I can't do anything about it"
+    },
+    {
+        "question": "Do you have a feeling like you are a failure ?",
+        "a": "No, I have confidence on myself",
+        "b": "I feel I have failed more than the average person",
+        "c": "I feel I am a complete failure as a person"
+    },
+    {
+        "question": "Are you having fun in your life ?",
+        "a": "I am getting happy as much as I used to",
+        "b": "I don't enjoy things as I used to",
+        "c": "I am dissatisfied or bored with everything"
+    },
+    {
+        "question": "Do you cry lately ?",
+        "a": "I don't cry more than any usual",
+        "b": "I cry more now than before",
+        "c": "I used to be able to cry but, now I am not able to cry properly"
+    },
+    {
+        "question": "Have you lost interest in your surroundings ?",
+        "a": "No, I am every bit interested in things now then I ever was",
+        "b": "I am having less interest in any activity lately",
+        "c": "I have lost most of my interest in almost everything out there"
+    },
+    {
+        "question": "Have you faced difficuty in making any decision lately ?",
+        "a": "I make decision carefully and I am responsible for them",
+        "b": "I put off making decision more than I ever used to",
+        "c": "I can't make decision at all on my own"
+    }
+]
