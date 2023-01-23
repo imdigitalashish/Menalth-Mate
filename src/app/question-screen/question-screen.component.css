@@ -39,9 +39,7 @@
     background: fixed;
 }
 
-.questionList {
-
-}
+.questionList {}
 
 .questionCard {
 
@@ -79,9 +77,25 @@
     width: 100%;
     margin-top: 0.7rem;
     border-radius: 1rem;
-    
+
     background: #FF7E15;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.faceInput {
+    /* width: 200px;
+    height: 200px; */
+    /* background: red; */
+    position: absolute;
+    right: 0;
+    transform-origin: top right;
+    /* scale: 0.3; */
+    
+}
+
+#cameraInput {
+    display: none;
 }
