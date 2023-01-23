@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { LandingScreenComponent } from './landing-screen/landing-screen.component';
 import { QuestionScreenComponent } from './question-screen/question-screen.component';
 import { HttpClientModule } from "@angular/common/http";
+
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +19,7 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

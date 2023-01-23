@@ -4,8 +4,8 @@ import { LandingScreenComponent } from './landing-screen/landing-screen.componen
 import { QuestionScreenComponent } from './question-screen/question-screen.component';
 
 const routes: Routes = [
-  { path: "", component: LandingScreenComponent },
-  { path: "questionScreen", component: QuestionScreenComponent },
+  { path: "", component: LandingScreenComponent, data: { animation: "mainPage" } },
+  { path: "questionScreen", component: QuestionScreenComponent, data: { animation: "questionPage" } },
 ];
 
 @NgModule({
